@@ -1,0 +1,54 @@
+PHIẾU GỐC DT028 — TRÍCH TỪ 91_PHIEU_GIAO_DE_TAI_INT13185_N03.DOCX
+(Nguồn: Danh_sach_va_de_giao/91_Phieu_giao_de_tai_INT13185_N03.docx, mục DT028)
+
+DT028   INT13185   Nhóm 03   Giảng viên Hồ Nhựt Minh
+Sinh viên Phan Đức Huy   MSSV N24DCDT034
+Lớp D24CQDT01-N
+Tìm vị trí đầu, cuối và tần suất của x
+Chương 2, Mục 2.6.2; mục 2.8 bài 28; trang in 50–52, 62; trang PDF 62–64, 74
+
+Đề bài
+Cho mảng đã tăng có khóa trùng, tìm lần xuất hiện đầu tiên và cuối cùng bằng hai tìm kiếm nhị phân. Từ hai biên đếm số lần xuất hiện, phân biệt với tìm một vị trí bất kỳ và xử lý giá trị hoàn toàn vắng mặt. Trọng tâm là tự viết hàm, theo dõi biến qua từng bước và giải thích kết quả trên các trường hợp nhỏ.
+
+Dữ liệu vào
+a::Vector{Int} tăng không giảm, 0<=n<=10000; x nguyên; vắng trả first=last=0, count=0. Nhập từ bàn phím hoặc truyền trực tiếp các giá trị, mảng đã khai báo trong chương trình.
+
+Kết quả ra
+Hai chỉ số 1-based đầu/cuối và tần suất; nếu thấy, count=last-first+1; trace hai quá trình tìm biên.
+
+Ví dụ 1
+Đoạn chỉ số 2..4 gồm đúng ba số 2.
+
+Ví dụ 2
+Không gán vị trí chèn của 3 thành một lần xuất hiện.
+
+DT028 HƯỚNG DẪN THỰC HIỆN
+N24DCDT034   Phan Đức Huy
+Thực hiện lần lượt năm bước
+1. Đọc mục sách được chỉ dẫn; xác định điều kiện đầu vào, kết quả cần trả và giải ví dụ thứ nhất bằng tay.
+2. Lần vết khi gặp a[mid]==x: bản tìm đầu tiếp tục về trái, bản tìm cuối tiếp tục về phải; vẫn lưu vị trí hiện có.
+3. Cài hai hàm biên và hàm ghép kết quả; chỉ tính last-first+1 khi đã xác nhận tìm thấy x.
+4. Đối chiếu quét tuyến tính trên mảng nhỏ; thử x ở hai đầu, chiếm cả mảng và không có.
+5. Chạy hai ví dụ và năm ca kiểm thử; đối chiếu kết quả mong đợi, sửa lỗi và giải thích một trường hợp biên.
+
+Các hàm nên viết
+vi_tri_dau(a,x)
+vi_tri_cuoi(a,x)
+tan_suat(a,x)
+
+Năm ca cần kiểm tra
+1. [1, 2, 2, 2, 4], x=2 cho 2, 4, 3.
+2. Cùng mảng, x=3 cho 0, 0, 0.
+3. [5, 5, 5], x=5 cho 1, 3, 3.
+4. [1, 2], x=1 cho 1, 1, 1.
+5. Mảng rỗng cho 0, 0, 0.
+
+Phân tích và nhận xét
+Mỗi hàm O(log n), hai hàm vẫn O(log n); vùng phụ O(1). Bản quét tham chiếu O(n). Thử n = 5, 50, 500, 5000 với dãy nhiều trùng; đếm lần xét mid của từng biên riêng.
+
+Yêu cầu thêm sau khi phần cơ bản chạy đúng
+Tùy chọn: dùng hai biên để đếm số phần tử nằm trong đoạn giá trị [L, U] hợp lệ.
+
+Sản phẩm: mã nguồn, các kết quả chạy ví dụ và ca kiểm tra, một lần vết bằng tay, báo cáo theo mẫu môn học. Chạy từ bàn phím hoặc truyền trực tiếp các giá trị vào hàm.
+
+Ngày giao ....../....../............     Ngày nộp ....../....../............
