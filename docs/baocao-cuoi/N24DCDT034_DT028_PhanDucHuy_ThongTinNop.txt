@@ -1,0 +1,40 @@
+﻿THÔNG TIN NỘP ĐỀ TÀI CÁ NHÂN
+INT13185 — Nhóm 03
+
+Họ và tên: Phan Đức Huy
+MSSV: N24DCDT034
+Lớp: D24CQDT01-N
+Mã đề: DT028
+Tên đề: Tìm vị trí đầu, cuối và tần suất của x
+
+URL repo GitHub: https://github.com/Mildsivan/ctdl-baocao
+SHA C đầy đủ của mã/test/input dùng chạy và chụp ảnh: 4277eb8768fbb63ed709df060ecd56e0073346c1
+Permalink tệp thuật toán chính tại C: https://github.com/Mildsivan/ctdl-baocao/blob/4277eb8768fbb63ed709df060ecd56e0073346c1/src/DeTai.jl
+Permalink tệp kiểm thử tại C: https://github.com/Mildsivan/ctdl-baocao/blob/4277eb8768fbb63ed709df060ecd56e0073346c1/test/runtests.jl
+SHA S đầy đủ của phiên bản nộp cuối: 1781501c992a1ddabeca3c49b16c3da0b7d5215a
+Xác nhận mã/test/input không đổi giữa C và S, hoặc mô tả phần đã chạy lại: Mã/test/input không đổi giữa C và S (chỉ thêm ảnh/log/mô phỏng HTML); đã clone S tại 1781501c992a1ddabeca3c49b16c3da0b7d5215a và chạy lại: 12/12 ca chức năng đạt, 18.624/18.624 phép kiểm đạt, END_TO_END_OK.
+
+Ngôn ngữ và phiên bản: Julia 1.13.1 (chỉ thư viện chuẩn); Visual Studio Code 1.142.0 + terminal PowerShell; Windows 11
+Lệnh chạy ví dụ 1: julia --startup-file=no demo.jl --ca=1
+Lệnh chạy ví dụ 2: julia --startup-file=no demo.jl --ca=2
+Lệnh nhập dữ liệu mới: julia --startup-file=no demo.jl --nhap
+Lệnh biên dịch (nếu dùng C++): Không áp dụng (Julia, chạy trực tiếp)
+Lệnh chạy bộ kiểm thử: julia --startup-file=no test/runtests.jl
+Số ca kiểm độc lập: 12 ca chức năng + 1 ca lỗi (13 ca có mã); 18.594 phép kiểm bất biến
+Số phép kiểm đạt / tổng số phép kiểm: 18.624 / 18.624 (21 + 18.594 + 9)
+
+Đã có đủ 11 ảnh cá nhân trong báo cáo và ZIP (Có/Chưa): Có — đủ 11 ảnh A01–A11 trong báo cáo và ZIP
+Ảnh A10 clone/chạy C đã có (Có/Chưa): Có — ảnh 10_clone_sach_chay_lai.png, clone C 4277eb8 và chạy END_TO_END_OK
+Đã clone SHA S vào thư mục mới và chạy lại (Có/Chưa): Có — đã clone 1781501c992a1ddabeca3c49b16c3da0b7d5215a và chạy lại
+Tóm tắt kết quả chạy lại hai ví dụ và bộ test từ S: 12/12 ca chức năng đạt, 18.624/18.624 phép kiểm đạt, END_TO_END_OK
+Giảng viên truy cập được GitHub và permalink (Có/Chưa): Có — repo public, truy cập sau khi push
+
+Tên tệp Word nộp: N24DCDT034_DT028_PhanDucHuy_BaoCao.docx
+Tên tệp PDF nộp: N24DCDT034_DT028_PhanDucHuy_BaoCao.pdf
+Tên tệp ZIP mã nguồn nộp: N24DCDT034_DT028_PhanDucHuy_MaNguon.zip
+Ngày hoàn tất: 20/10/2026
+
+Ghi chú: Commit C, ảnh A10/A11 và commit S đã có; chỉ còn push main lên GitHub bằng tài khoản có quyền. SHA S: 1781501c992a1ddabeca3c49b16c3da0b7d5215a; clone S đã chạy lại 12/12 ca.
+
+
+
